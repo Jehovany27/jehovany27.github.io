@@ -1,0 +1,36 @@
+// script.js
+// Configuration Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyCFGm3IzTLFK7Eriw1TK_ePdr8-vjzfPVk",
+  authDomain: "worldknowledgeshare-jam.firebaseapp.com",
+  databaseURL: "https://votre-projet.firebaseio.com",
+  projectId: "worldknowledgeshare-jam",
+  storageBucket: "worldknowledgeshare-jam.appspot.com",
+  messagingSenderId: "420853073974",
+  appId: "1:420853073974:web:6469dca53ca1b0cb323097",
+  measurementId: "G-HGXC5N8MBN",
+};
+
+// Initialisation Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+const knowledgeRef = db.ref('connaissances');
+
+// Soumission du formulaire
+document.getElementById('knowledgeForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const knowledgeInput = document.getElementById('knowledgeInput').value;
+  if (knowledgeInput.trim() !== '') {
+    knowledgeRef.push({ text: knowledgeInput.trim() });
+    document.getElementById('knowledgeInput').value = '';
+  }
+});
+
+// Affichage des connaissances partagées en temps réel
+knowledgeRef.on('child_added', (snapshot) => {
+  const knowledge = snapshot.val();
+  const li = document.createElement('li');
+  li.className = 'list-group-item';
+  li.textContent = knowledge.text;
+  document.getElementById('knowledgeList').appendChild(li);
+});
