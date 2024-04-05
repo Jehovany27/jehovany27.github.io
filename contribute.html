@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorldKnowledgeShare - Contribute</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div include src="header.html"></div>
+
+  <main>
+    <h1>Share Your Knowledge</h1>
+
+    <section class="contribution-form">
+      <h2>Contribute Something New</h2>
+      <form action="#">
+        <label for="type">Type of Knowledge:</label>
+        <select id="type" name="type">
+          <option value="fact">Interesting Fact</option>
+          <option value="tip">Useful Tip</option>
+          <option value="tutorial">Tutorial/Guide</option>
+          <option value="story">Story/Experience</option>
+        </select>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" placeholder="Enter your knowledge title">
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" rows="10" placeholder="Write your interesting fact, tip, or story"></textarea>
+        <label for="media">Media (Optional):</label>
+        <input type="file" id="media" name="media" accept="image/*,video/*">
+        <button type="submit">Contribute</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
+

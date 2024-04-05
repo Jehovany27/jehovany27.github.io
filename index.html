@@ -4,31 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WorldKnowledgeShare</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="row mt-5">
-      <div class="col-md-6 offset-md-3">
-        <h1 class="text-center mb-4">WorldKnowledgeShare</h1>
-        <form id="knowledgeForm">
-          <div class="form-group">
-            <label for="knowledgeInput">Partagez votre connaissance :</label>
-            <textarea class="form-control" id="knowledgeInput" rows="3" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Soumettre</button>
-        </form>
-        <ul class="list-group mt-3" id="knowledgeList"></ul>
-      </div>
-    </div>
-  </div>
+  <header>
+    <h1>WorldKnowledgeShare</h1>
+    <p>Share and discover knowledge together!</p>
+  </header>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
-  <script src="script.js"></script>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Explore</a></li>
+      <li><a href="#">Contribute</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="featured">
+      <h2>Featured Knowledge</h2>
+      <article>
+        <h3>Amazing Fact!</h3>
+        <p>Did you know that the population of the earth is about 8 billion people?</p>
+      </article>
+      <article>
+        <h3>Useful Tip</h3>
+        <p>Coffee grounds are a great natural fertilizer for your plants!</p>
+      </article>
+    </section>
+
+    <section class="contribute">
+      <h2>Share Your Knowledge</h2>
+      <p>What do you want to teach the world?</p>
+      <form action="#">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" placeholder="Enter your knowledge title">
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" rows="5" placeholder="Write your interesting fact, tip, or story"></textarea>
+        <button type="submit">Contribute</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; WorldKnowledgeShare 2024</p>
+  </footer>
+
 </body>
 </html>
+

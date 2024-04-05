@@ -1,8 +1,79 @@
-/* style.css */
 body {
-  padding-top: 50px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-ul {
-  margin-top: 20px;
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
 }
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+nav {
+  background-color: #ddd;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.featured article {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.featured h2, .contribute h2 {
+  margin-bottom: 10px;
+}
+
+.contribute form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contribute label {
+  margin-bottom: 5px;
+}
+
+.contribute textarea {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
