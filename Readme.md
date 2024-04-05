@@ -26,7 +26,7 @@ We believe WorldKnowledgeShare has the potential to become a valuable resource f
 
 This project is open source and welcomes contributions from the community. Here's how you can get involved:
 
-1. **Clone the repository:** Find the codebase on GitHub: [link to your GitHub repository].
+1. **Clone the repository:** Find thewebsite on internet: [https://jehovany27.github.io/index.html].
 2. **Report issues and bugs:** Help us improve the platform by reporting any issues you encounter.
 3. **Suggest new features:** Share your ideas for how to make WorldKnowledgeShare even better.
 4. **Contribute code:** Fork the repository, make your changes, and submit a pull request.
